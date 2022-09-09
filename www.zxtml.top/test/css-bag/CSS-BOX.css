@@ -1,0 +1,118 @@
+/* ----------------CSS Box Model---------------- */
+
+/* 
+    Padding:Invisible space around the element
+                         inside of the element
+    ----Border:line around the element
+             but inside of the element--------
+    ------------Width,Height------------------
+        Fill Area:area that gets filled with
+        background color or backgound image
+    --------Content:Text,Image,etc------------
+    Margin:space outside of the element
+            between elements------------------
+*/
+/*       .....................................
+         .             Margin                .
+         .   ----------------------------    .
+         .   |         Padding          |    .
+         .   |     xxxxxxxxxxxxxxx      |    .
+         .   |     xxxxxxxxxxxxxxx      |    .
+         .   |     xxxxxxxxxxxxxxx      |    .
+         .   |     xxxxContentxxxx      |    .
+         .   |     xxxxxxxxxxxxxxx      |    .
+         .   |     xxxxxxxxxxxxxxx      |    .
+         .   |     xxxxxxxxxxxxxxx      |    .
+         .   |                          |    .
+         .   -----------Border-----------    .
+         .                                   .            
+         .....................................
+*/
+/* 
+                        SO
+    Final element width=left border+left padding+width
+    +right border+right padding
+
+    Final element height=top border+top padding+height
+    +bottom padding+bottom border
+*/
+article header{
+    padding:10px;
+    /* and we can also define every part of padding */
+    padding-left: 25px;
+    padding-right: 25px;
+    /* and shorthand with 'top-bottom left-right'*/
+    padding: 10px 25px;
+    padding-bottom: 5px;
+
+}
+h1{
+    margin:5px;
+    margin-top:8px;
+    margin-bottom:3px;
+    
+}
+#glad{
+    margin:10px;
+    margin-top:5px;
+    margin-bottom:10px;
+    text-align: center;
+}
+h2{
+    margin:13px 0;
+    
+}
+.author{
+    margin-bottom:10px;
+}
+h5{
+    margin-top: 10px;
+}
+/* collapsing margins:
+        when we have two margins that occupies the same space
+        only one of them is actually visible
+*/
+/* --------------------------------------------- */
+
+/* and CSS Box contain: 
+    inline box: like <strong><img><button><a>
+    and block level boxes : p,div etc
+*/
+/* 
+    inline elements'paddings and margins
+    are only applied horizontally
+*/
+/* 
+    so,we can 
+    transform some block-level element into inline element
+    and vice-versa
+*/
+/* 
+    when we use some inline element
+    but we want to let it show as block-level element
+    we should use 
+                'display'
+                this commond
+*/
+
+
+/* 
+                    and then
+            comes a element called
+                inline-block
+it means inline elements can have top,bottom paddings and margins
+*/
+.little-pictures{
+    margin-top:5px;
+    margin-right:4px;
+    display: inline-block;
+}
+#remark{
+    padding-left: 10px;
+}
+div+ol{
+    margin-left: 20px;
+}
+ol+ul{
+    margin-left: 20px;
+}

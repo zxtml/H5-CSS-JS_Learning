@@ -1,0 +1,36 @@
+/* ---------------------LVHA---------------------------- */
+/* 
+    link
+    this is about all a tag with a href attribute 
+*/
+a:link{
+    /* set text with no line */
+    color:rgb(19, 191, 200);
+    text-decoration: none;
+}
+/*
+    set a tag with which has been whatched,
+    to be another color
+*/
+a:visited{
+    color:rgb(11, 134, 141);
+
+}
+/* 
+    this set when the mouse hover on the text
+    this text will be changed
+*/
+a:hover{
+    font-weight: bold;
+    /* and we can describe what shape is the underline */
+    text-decoration: underline ;
+}
+/* 
+when it is being clicked
+it will be in active
+*/
+a:active{
+    background-color: rgb(173, 173, 173);
+    font-style: italic;
+}
+/* ----------------------------------------------------- */

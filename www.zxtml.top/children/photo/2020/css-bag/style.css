@@ -1,0 +1,94 @@
+*{
+    margin: 0 0;
+    padding: 0 0 ;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+    /* 
+        it's meaning that the priority font family is Inter
+        but if some reason that it is not available
+        it may be sans-serif
+    */
+    font-size: 18px;
+}
+body{
+    min-width: 640px;
+    max-width: 1280px;
+    margin:0 auto;
+}
+h1{
+    font-size: 100px;
+}
+header{
+    display: flex;
+    padding:20px 30px;
+    /* padding-top: 150px; */
+    height: 150px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.introduction{
+    width: 200px;
+    padding-right: 100px;
+}
+article{
+    display: flex;
+    margin:10px 20px;
+    gap:10px;
+}
+.main-container{
+    max-width: 960px;
+    min-width: 480px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:3px;
+}
+.con-img img{
+    width:100%;
+}
+.cro-container{
+    position: relative;
+    display: table;
+}
+
+.sign{
+    height: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sign::first-letter {
+    font-size: 30px;
+    margin-right: 2px;
+}
+header nav{
+    display: flex;
+    height: 20px;
+    gap:8px;
+}
+header nav a {
+    font-size: 12px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+footer{
+    text-align: center;    
+    font-size: 10px;
+}
+footer a{
+    font-size: 10px;
+}
+a:link{
+    color:rgb(232, 174, 88);
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+    text-decoration:underline;
+}
+a:visited{
+    color:rgb(232, 174, 88);
+
+}
+._2020 a{
+    font-weight: bold;
+    text-decoration: underline;
+}

@@ -1,0 +1,68 @@
+/* 
+    we can build a combining selector
+    just like:
+*/
+h2,
+p {
+    color: rgb(88, 143, 225);
+    font-family: sans-serif;
+}
+
+.test1 {
+    color: rgb(106, 193, 233);
+}
+
+.test2 {
+    color: rgba(106, 193, 233, 0.744)
+}
+/* ---------------------- */
+.container{
+    width: 700px;
+    margin: auto;
+    padding: 10px;
+    border: 4px solid pink;
+    padding-top: 0;
+}
+h2{
+    margin:4px 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding:5px;
+    font-size: 26px;
+    text-align: center;
+    background-color: rgb(168, 255, 246);
+    color:#444;
+}
+p{
+   margin:5px;
+   text-align: center;
+}
+footer{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 16px;
+    margin-top:10px;
+    background-color: rgb(224, 224, 224);
+}
+a:link{
+    text-decoration: none;
+    color: rgb(88, 143, 225);
+}
+a:visited{
+    color:rgb(124, 124, 210);
+}
+img{
+    width: 60%;
+    padding:0 20%;
+}
+img+p::first-line{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+footer{
+    font-size: 10px;
+}
+footer a:link{
+    color:black;
+}

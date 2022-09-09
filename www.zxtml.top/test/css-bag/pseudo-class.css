@@ -1,0 +1,26 @@
+/* -------------------------------------------------- */
+/* 
+    pseudo class:
+    used to queckily find the object
+    first-child and last-child is about the tag's name
+*/
+li:first-child,
+li:nth-child(2),
+li:nth-child(3) {
+    font-weight: bold;
+}
+
+li:nth-child(odd) {
+    color: rgb(140, 198, 167);
+}
+
+/* 
+    be attention:
+    the last-child must the last tag
+    if has other tag
+    it won't be showned
+*/
+li:last-child {
+    font-style: italic;
+}
+/* --------------------------------------------------- */

@@ -1,0 +1,33 @@
+/* conflicting selectors */
+/* with multiple selectors */
+/* there is a regular: */
+/* 
+the level is bigger, the priority is higher
+5.   Declarations Marked !important
+->  4.  Inline style
+    ->  3.  ID(#)selectors   
+        ->  2.  Class(.) or pseudo-class(:) selector
+            ->  1.  Element selecors(p,a,li...)
+                ->  0.  Universel selector(*)
+
+inherite the element who has lower priority
+universel selector :
+    is used to every element should have
+    and don't want to be gotten inherit
+
+*/
+*{
+    font-family: sans-serif;
+}
+
+aside h4{
+    text-align: center;
+}
+aside{
+    border-top: 3px solid rgb(121, 199, 220);
+    background-color: aliceblue;
+}
+.pages-change {
+    text-align: center;
+    line-height: 8px;
+}

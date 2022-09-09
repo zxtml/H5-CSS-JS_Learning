@@ -1,0 +1,53 @@
+h1 {
+    font-size: 30px;
+    font-family: sans-serif;
+    /* to let the text become the appointed form */
+    text-transform: uppercase;
+    font-style: oblique;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(132, 216, 177);
+    font-family: sans-serif;
+    line-height: 12px;
+}
+
+h4 {
+    color: rgb(126, 184, 236);
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+h5 {
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+/* dont set the ol tag and ul tag */
+li {
+    color: rgb(146, 194, 178);
+    /* usually set it's size as 16px */
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+p {
+    color: rgb(121, 199, 220);
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+footer{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

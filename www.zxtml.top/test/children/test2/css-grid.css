@@ -1,0 +1,176 @@
+/* 
+    to set the css grid's demension
+*/
+
+/* 
+    CSS Grid 
+    divide a container element into rows anc columns
+    less nested HTML
+    not mean to replace flexbox it's 2D
+
+*/
+/* 
+    all elements in grid container 
+        called grid items
+    ----------------------------------------------
+    |  ----------     -----------   -----------  |
+    |  |        |  c  |         |   |         |  |
+    |  |        |  o  |         |   |         |  |
+    |  ----------  l  -----------   -----------  |
+    |              u     row axis                |
+    |  ----------  m  -----------   -----------  |
+    |  |        |  n  |         |   |         |  |
+    |  |        |  a  |         |   |         |  |
+    |  ----------  x  -----------   -----------  |
+    |              i                             |
+    |              s                             |
+    ----------------------------------------------
+*/
+/*
+                      grid lines
+    1              2              3               4   
+   1----------------------------------------------
+    |  ----------  |  ----------- |  -----------  |
+    |  |        |  |  |         | |  |         |  |
+    |  |        |  |  |         | |  |         |  |
+    |  ----------  |  ----------- |  -----------  |
+   2|--------------|--------------|---------------|
+    |  ----------  |  ----------- |  -----------  |
+    |  |        |  |  |         | |  |         |  |
+    |  |        |  |  |         | |  |         |  |
+    |  ----------  |  ----------- |  -----------  |
+   3|--------------|--------------|---------------|
+
+
+                          so
+    row lines and column lines equal
+    number of row or colum plus one
+    the border divide everyone a grid cell
+    grid cell not always to be filled
+    gap called gutters
+    called a row or column track
+ */
+
+ /* 
+                    grid container
+    grid-template-rows: <track size> *
+    grid-template-columns: <track size>*
+            ----to establish the row and column tracks
+    row-gap: 0 <length>     |
+                            |---gap: 0 <length>
+    column-gap: 0 <length>  |    
+            ----create empty space
+    justify-items: stretch
+    align-items: stretch
+            ----align element 
+                inside rows/columns horizontally/vertically
+    justify-content: start
+    align-content: start
+            ----align entire grid inside grid container
+                only applies for when container is 
+                larger than grid 
+ */
+
+ /* 
+                    grid items
+    grid-column: <start line>/<end line>   | span <number>
+    grid-row: <start line>/<end line>   | span <number>
+            ----place a grid item into a specific cell
+    justify-self: stretch
+    align-self: stretch
+            ----overwrite justify-items/align-items for sigle items
+ */
+.container2{
+    margin:10px 20px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1.25fr 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 
+    grid use fr to explain the rate between these grids 
+    when we use auto 
+    it will let these grids' size as the necessarity
+*/
+/* 
+    we can also use 
+                    repeat(num,len)
+    to create a grid
+*/
+/* 
+    explicit rows:
+            the rows we have specified some size
+    implicit rows:
+            the rows we have not specified
+            it's added automatically
+*/
+.el--11{
+    background-color: blanchedalmond;
+}
+/* 
+    and because the grid's cross
+    we can use :
+            grid-column: start-row/end-row
+                        and
+            grid-row: start-line/end-line
+    to set the gird items in special position
+    even can be state in two or more grids
+            grid-column: start-row/span num
+*/
+/* 
+    when want let them in the end of the gird 
+    use :       
+                align-content:end 
+    not flex-end
+    because it is just using in flexbox
+*/
+.el--12{
+    background-color: rgb(205, 255, 208);
+    grid-column: 4/5;
+    grid-row:2/3;
+}
+.el--13{
+    background-color: rgb(205, 255, 235);
+    grid-column: 2/span 2;
+}
+.el--14{
+    background-color: rgb(205, 211, 255);
+}
+.el--15{
+    background-color: rgb(218, 205, 255);
+}
+.el--16{
+    background-color: rgb(253, 205, 255);
+}
+.el--17{
+    background-color: rgb(255, 205, 225);
+}
+.el--18{
+    background-color: rgb(255, 205, 205);
+    grid-column: 2/span 2 ;
+}
+div a {
+    font-size: 28px;
+    color: rgb(141, 141, 141) !important; 
+    display: flex;
+    align-items: center;
+}
+div a:hover{
+    font-weight: bolder;
+}
+article div{
+    display: flex;
+    /* 
+        align tracks inside container
+    */
+    /* align-content: center; */
+    /* 
+        align-items inside cells
+    */
+    align-items: stretch;
+    justify-content: center;
+}

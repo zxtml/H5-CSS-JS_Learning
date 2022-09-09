@@ -1,0 +1,228 @@
+<!--
+    this just a static page
+-->
+<!DOCTYPE html>
+
+<!--language-->
+<!--
+    en--english
+    zh--chinese
+-->
+<html lang="en">
+
+<!--
+    to put in some invisible items
+-->
+
+<head>
+    <!--
+        metadata
+        don't have closing tag 
+        just using a '/>'
+    -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        link tag 
+        using for connecting the css file
+        rel is telling people what kind is this link
+    -->
+    <link href="./css-bag/style.css" rel="stylesheet">
+    <link href="./css-bag/CSS-BOX.css" rel="stylesheet">
+    <link href="./css-bag/LVHA.css" rel="stylesheet">
+    <link href="./css-bag/confli-selector.css" rel="stylesheet">
+    <link href="./css-bag/pseudo-class.css" rel="stylesheet">
+    <link href="./css-bag/color.css" rel="stylesheet">
+    <link href="./css-bag/selector.css" rel="stylesheet">
+    <link href="./css-bag/high-level-css/Demensions.css" rel="stylesheet">
+    <link href="./css-bag/high-level-css/absolute-position.css" rel="stylesheet">
+    <link href="./css-bag/high-level-css/pseudo-element.css" rel="stylesheet">
+    <title>first html</title>
+
+    <!--
+        internal CSS
+        writing CSS in the head tag
+        just in a style tag
+    -->
+    <style>
+        /* 
+        should start with a selector
+        and write in a declaration block 
+        */
+        h5 {
+            color: rgb(146, 219, 219);
+        }
+    </style>
+</head>
+
+<!--
+    to put in visible items
+-->
+
+<body>
+    <!--
+        just a invisible box 
+        to tell the web browser
+        it's a header in this page
+    -->
+    <header>
+        <!--
+            inline CSS
+            just writing the CSS code inside 
+            don't use it casually
+        -->
+        <h1 style="color: pink">HTML Learning page</h1>
+    </header>
+
+    <!--
+        an article is about
+        all the things in this world
+        you can say anything is an article
+    -->
+    <article>
+        <header>
+
+            <!--paragraph-->
+            <h5 class="author">ZXTML</h5>
+            <img class="headshot" src="./content/headshot.jpg" alt="author's headshot" width="50">
+
+            <!--alternative text-->
+            <h2>hello,everyone!</h2>
+            <!--
+                em-emphasize
+                strong-strong
+            -->
+            <h2>welcome to <em>zxtml</em>'s first webpage! :D</h2>
+        </header>
+        <p id="glad">i'm so <strong>glad</strong> that you truely find this page</p>
+        <div class="pic-container">
+            <img class="big-pictures" src="./content/ZTL02813.jpg" alt="a picture of chinoiserie mountain " width="600" />
+        </div>
+        <!--order list-->
+        <ol>
+            <!--list item-->
+            <li>this page is for learning html</li>
+            <li>and it's too noise now that</li>
+            <li>i don't know what i want to say</li>
+        </ol>
+
+        <!--unorder list-->
+        <ul>
+            <li>to learn html</li>
+            <li>to build an own webpage</li>
+            <li>is a romantic thing</li>
+            <li>right?</li>
+        </ul>
+
+        <!--
+            navigation container
+            a invisible box
+        -->
+        <nav>
+
+            <!--anchor element-->
+            <!--
+                the text between these two tags
+                is the text for showing
+            -->
+            <p class="pages-change">
+                an important page for a web designer is
+                <a href="https://developer.mozilla.org/zh-CN/" target="_blank">
+                    MDN Web Docs
+                </a>
+            </p>
+            <p class="pages-change">
+                the next page is
+                <a href="./children/blog.html">BLOG &rarr;</a>
+
+                <!--
+                    using a '#' in a tag 
+                    it can back to the top of this page
+                -->
+                <a href="#"> top</a>
+            </p>
+        </nav>
+
+        <!--
+            div is just for a container 
+            which don't have any special meaning
+            but also ,nothing changed
+            if a sentence stright in it
+            it will lose some blank space
+        -->
+        <div>
+            <p class="pages-change">
+                nothing meaningful word
+            </p>
+        </div>
+
+        <!--
+            used for some secondary information,
+            complitment information
+            in the main part of this page
+            like a sider part
+        -->
+        <aside>
+            <h4>in this part,i'd like to share every meaningful pictures</h4>
+            <ul id="pictures">
+                <li>
+                    <img src="./content/20201019.jpg"
+                    class="little-pictures"
+                        alt="a dark street with oringe glimmer,thr light throught this street" width="100">
+                    a picture I shot in <a href="#">《2020》</a>,which I shot around when I was going to the class room
+                </li>
+
+                <li>
+                    <img src="./content/ZTL00580.jpg" 
+                    class="little-pictures"
+                    alt="a brght sun cross from the horizen to the air" width="100">
+                    and in <a href="#">《2021》</a>,the first to chase the sunrise
+                </li>
+
+                <li>
+                    <img src="./content/girl.jpg"
+                        class="little-pictures"
+                        alt="two girls passing by a consice clothes shop,the proprietress is tidying clothes through the window"
+                        width="100">
+                    in <a href="#">《2022》</a>,street snaping with Lin
+                </li>
+            </ul>
+            <p id="remark">
+                thses links i will finish later soon
+            </p>
+        </aside>
+
+        <p class="script">
+            if you like my article or what i have shot and so on,
+            so please just put this button
+            <br>
+            and just for once
+            <br>
+            it's enough and thank you
+            <br>
+            <!-- 
+                emoji : windows key + dot key
+            -->
+            <button>
+                L❤ke
+            </button>
+        </p>
+
+    </article>
+
+    <!--
+        a footer is for building an important copyright
+    -->
+    <footer>
+
+        <!--
+            html entity is using a simbol '&'
+        -->
+        <p>Copyright &copy; 2022 by ZXTML  <a href="../index.html">Navigation</a></p>
+    </footer>
+    
+</body>
+
+</html>

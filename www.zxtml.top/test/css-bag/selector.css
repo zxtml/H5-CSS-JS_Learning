@@ -1,0 +1,44 @@
+/* 
+    descendant selector
+    to precisely find the tag
+*/
+footer p {
+    font-family: sans-serif;
+    color: black;
+    font-size: 10px;
+}
+
+.author{
+    line-height: 1px;
+}
+
+/* 
+    also,
+    can use a special method
+    called id
+    but id can't be repeted
+*/
+#remark {
+    color: black;
+    font-size: 12px;
+}
+
+/* 
+    and can set class
+ */
+.script {
+    text-align: center;
+    font-size: 18px;
+    color:rgb(239, 174, 172);
+}
+
+/* 
+    delete the point
+*/
+#pictures {
+    list-style: none;
+}
+
+article header{
+    background-color: rgba(230, 242, 244, 0.89);
+}

@@ -1,0 +1,36 @@
+/* 
+    pseudo class use one ':'
+    pseudo element use two '::'
+*/
+
+h2::first-letter{
+    text-transform: uppercase;
+    font-size: 26px;
+}
+h4::first-letter{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/* 
+    sibling tag will be selected
+    not very helpful
+    */
+header + p::first-letter{
+    text-transform: uppercase;
+}
+header{
+    position: relative;
+}
+article header::after{
+    content:"GOOD";
+    color:#444;
+    font-size: 16px;
+    font-weight: bold;
+    padding:4px 8px; 
+    display:inline-block;
+    background-color: rgb(244, 173, 40);
+    position:absolute;
+    top:5px;
+    right:10px;
+}

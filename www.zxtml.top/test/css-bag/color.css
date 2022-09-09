@@ -1,0 +1,27 @@
+/* 
+    some struct's name:
+    background-color
+    border
+    font
+*/
+head,
+body {
+    /* 
+        a beautiful color :#f7f7f7
+    */
+    background-color: #f7f7f7;
+}
+
+h1 {
+    /* 
+        border has multiple values 
+        conclude: with style color
+        style concludes solid dotted dashed
+        border has four parts:
+                    border-top
+        border-left             border-right
+                    border-bottom
+    */
+    border-bottom: 3px solid rgb(163, 215, 229);
+    background-color: rgba(239, 239, 239, 0.546);
+}

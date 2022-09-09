@@ -1,0 +1,93 @@
+/*                 1
+            float layouts
+    old way of building layouts
+        using the float CSS property
+    
+    -------------------------------
+    |      |      |       |       |
+    |      |      |       |       |
+    |      |      |       |       |
+    -------------------------------
+*/
+
+/*                 2 
+               flex box
+    laying out elements in a
+        1-dimensional raw
+    perfect for component layouts
+
+    -------------------------------
+    |  ----  -----  -----  -----  |
+    |  |  |  |   |  |   |  |   |  |
+    |  |  |  |   |  |   |  |   |  |
+    |  ----  -----  -----  -----  |
+    -------------------------------
+*/
+
+/*                 3
+                CSS Grid
+    laying out elements in a 
+  fully-fledged 2-dimensional grid
+    perfect for page layout and
+        components
+    -------------------------------
+    |  -----        ------------  |
+    |  |   |        |          |  |
+    |  -----        |          |  |
+    |               |          |  |
+    |               ------------  |
+    |  -------------------------  |
+    |  |                       |  |
+    |  -------------------------  |
+    -------------------------------
+*/
+.head-tag{
+    float:left;
+}
+nav{
+    /*
+        when set float 
+    the element has no content anymore
+    so it looks like 
+                empty
+    so the height is zero 
+    */
+    /* it called collapsing elements */
+    float: right;
+    padding-right: 30px;
+    /* 
+        so float
+        is about 
+                out of flow
+        same as absoluting position
+    */
+}
+/* 
+    when a element is at float modle
+    text and inline elements will
+    wrap around it
+    like:
+        -----
+        |   |text text text
+        |   |text inline element
+        -----text text
+*/
+.clear{
+    /* to solve the problems float take */
+    clear:both;
+}
+/* and also can use a methrod named clearflix */
+.clearfix::after{
+    clear:both;
+    content: '';
+    display: block;
+    /* same as clear,but it is eazier */
+}
+
+/* 
+            Box-sizing:Border Box
+    the width and height goes all the way
+        from one side of the border 
+    to the opposite side of the border
+    so element full width is : width
+*/

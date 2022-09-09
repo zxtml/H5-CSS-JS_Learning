@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+.home {
+    height: 100%;
+    overflow: auto; 
+}
+html{
+    position: relative;
+    /* height: 100%; */
+}
+.content {
+    perspective: 0;
+    padding:3px 5px;
+    padding-top: 0;
+    background-color: rgb(240, 240, 240);
+    /* height:100%; */
+    /* background-image:url('../image/场图1.jpg') */
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+span {
+    display: block;
+    text-align: center;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin:auto;
+    align-items:flex-end;
+    top:80%;
+    bottom: 10%;
+    animation: downs 2s linear infinite;
+    cursor:default;
+}
+.title {
+    position: absolute;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    top:50%;
+    left:0;
+    right:0;
+    margin:auto;
+    font-weight: 500;
+}
+/* .bkc{
+} */
+.zxtml{
+    position: absolute;
+    top:0;
+    left:5px;
+    margin-left:0;
+    height: 65px;
+    width: 130px;
+}
+footer{
+    font-size: 10px;
+    text-align: center;
+    padding-top:5px;
+}
+nav{
+    /* position: absolute; */
+    height: 70px;
+    top: 0;
+    display: flex;
+    left: 0;
+    right:0;
+    justify-content: space-between;
+    margin:auto;
+    background-color:rgb(240, 240, 240);
+    position:relative;  
+}
+.Nav{
+    display: inline-block;
+    padding-top:20px;
+    /* border: 3px solid rgba(175, 202, 214, 0.673); */
+}
+a:link{
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0 50px;
+    color:rgb(232, 174, 88);
+}
+a:visited{
+    color:rgb(232, 174, 88);
+}

@@ -1,0 +1,210 @@
+/* 
+    the very amazing place is that
+    flexbox will
+        automatically devided the container elements   
+*/
+*{
+        font-size: 18px;
+        font-family: sans-serif;
+        padding: 0 0;
+        margin: 0 0;
+}
+/* 
+    but also
+    it easy to align the items to one another
+*/
+/* 
+        vertical centering
+            and
+        equal-height columns
+        automatically
+*/
+
+/* 
+                first:
+        creat a flex container
+    meaning use: 
+            display:flex;
+*/
+.container{
+        display:flex;
+        background-color: rgb( 240, 240, 240);
+        padding:15px 25px;
+margin-bottom: 30px;}
+/* 
+        then
+        the items in the flexbox
+    called flex elements
+    -------------------------------------------------
+    |                                               |
+    |  -------  -------  --------  -------  ------  |
+    |  |     |  |     |  |      |  |     |  |    |  |
+    |  |     |  |     |  |      |  |     |  |    |  |--->main axis
+    |  |     |  |     |  |      |  |     |  |    |  |
+    |  -------  -------  --------  -------  ------  |
+    |                                               |
+    -------------------------------------------------
+                            I    
+                            V
+                        cross axis
+*/
+
+/* 
+        we can actually 
+                change the direction
+        of the main axis and the cross axis
+*/
+
+
+/* 
+            to flex container:
+    gap:0;      ----to creat space between items
+    justify-content: flex-start;  
+                ----to align items along main axis
+    align-items: strech;
+                ----to align items along cross axis
+    flex-direction: row;
+                ----define which is main axis
+    flex-wrap: nowrap;
+                ----wrap into a new line 
+    align-content: stretch;
+                ----when they are multiple lines(flex-wrap: wrap)
+*/
+.container{
+        gap: 5px;
+        justify-content:center;
+        align-items: center;
+        height: 90px;
+}
+/* 
+            to flex elements: 
+    align-self: auto;
+                ----overwrite align-items for individual flex items
+    flex-grow: 0; <integer>
+                ----allow an element to grow(0 no,1+ yes)
+    flex-shrink: 0;
+                ----allow an element to shrink(same as last)
+    flex-basis: auto;<length>
+                ----instead of the width
+    flex: 0 1 auto;<int> <int> <len>
+                ----recommended shorthand to grow shrink basis
+    order: 0;<integer>
+                ---- -1 first, 1 last
+*/
+
+/* 
+        DEFAULTS:
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+*/
+
+/* 
+        when use flex-basis
+        we maybe find that some elements
+        didn't look like what we have set
+        because its flex-shrink is 0
+*/
+
+/* 
+        set flex-grow to 1
+        is that: 
+        this or these element(s) will be filled
+        up the container
+        but pay attention
+        if want them as a same length
+                empty space 
+        should set them a same number
+*/
+.flex-items{
+        font-size: 12px;
+        font-weight: bold;
+        padding:1px 2px;
+}
+.el--1{
+        background-color: rgb(96, 221, 221);
+        order: -1;
+        padding-right:100px;
+        margin-right: -15px;
+}
+.el--2{
+        background-color: rgb(219, 103, 219);
+        align-self: flex-end;
+        font-size: 14px;
+        text-transform: uppercase;
+        height: 20px;
+        display: flex;
+        align-items: center;
+}
+.el--3{
+        background-color: rgb(120, 221, 116);
+        height: 18px;
+        display: flex;
+        margin-right: 5px;;
+        align-items: center;
+}
+.el--4{
+        background-color: rgb(221, 218, 116);
+        height: 25px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+}
+.el--4::first-letter{
+        text-transform: uppercase;
+}
+.el--5{
+        background-color: rgb(116, 156, 221);
+        margin:10px;
+}
+.el--6{
+        background-color: rgb(221, 116, 219);
+        align-self: flex-start;
+
+}
+.el--7{
+        background-color: rgb(116, 221, 214);
+        margin-left:-10px;
+        margin-right: -5px;
+}
+.el--8{
+        background-color: rgb(221, 195, 116);
+        box-sizing: border-box;
+        height: 55px;
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+        padding: 3px 10px;
+}
+.el--8::first-letter{
+        text-transform: uppercase;
+}
+.el--9{
+        background-color: rgb(221, 116, 165);
+        margin-left: -5px;
+        margin-right:10px;
+}
+.el--10{
+        background-color: rgb(151, 116, 221);
+        order:1;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        padding:0 4px;
+        padding-right:30px;
+}
+
+footer{
+        font-size: 10px;
+        text-align: center;
+}
+a:link{
+
+        text-decoration: none;
+        color:rgb(247, 202, 135);
+        font-size: 10px;
+}
+a:visited{
+        color:rgb(247, 202, 135);
+}
+

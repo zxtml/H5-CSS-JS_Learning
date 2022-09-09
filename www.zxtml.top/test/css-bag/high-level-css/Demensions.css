@@ -1,0 +1,24 @@
+/* 
+    we can set the elements' size with the width and the height
+    and when we set the elements' size by one value
+    the other value should be auto
+*/
+/* 
+    and we can use percentage for 
+    it can be used to the whole page whether it changed
+    the percentage is of the width of the parent container
+    response webside
+*/
+.big-pictures{
+    width:100%;
+    height: auto 100%;
+}
+.little-pictures{
+    width: 10%;
+    height: auto 100%;
+}
+.pic-container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,41 @@
+/* 
+        different from  normal flow
+            it is
+                out of flow
+            it is completely lose any impact 
+                on surrounding elements
+        and will overlap them 
+*/
+/* use the cursor command */
+/* 
+    but
+        the position is related about
+            the viewport
+        is said that 
+        it won't be the page where you want
+    so
+        we should let the element's position
+            in relation other parent element
+        to add a postion to which you want it be the parent
+*/
+/* 
+    pay attention:
+        whatever you want let it be somewhere
+        you should let it be in the container
+            where you want it be in
+*/
+button{
+    font-size: 16px;
+    color: rgb(255, 190, 201);
+    background-color: rgba(189, 255, 246, 0.888);
+    padding: 5px;
+    font-family: sans-serif;
+    /* to let the mouse become a shape */
+    cursor: pointer;
+    position:absolute;
+    bottom: 5%;
+    right:5%
+}
+.script{
+    position:relative;
+}

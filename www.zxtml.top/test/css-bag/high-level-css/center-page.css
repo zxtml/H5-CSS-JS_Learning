@@ -1,0 +1,12 @@
+/* 
+    we can use a container to set the content to be center
+*/
+
+.container{
+    width: 800px;
+    /* 
+        setting auto will let the container be center
+    */
+    margin-left: auto;
+    margin-right:auto;
+}
